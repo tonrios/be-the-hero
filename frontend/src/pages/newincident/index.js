@@ -25,12 +25,12 @@ export default function NewIncident() {
         };
 
         try {
-            const response = await api.post('incidents', data, {
+            await api.post('incidents', data, {
                 headers: {
                     authorization: ong_id
                 }
             });
-            alert("Incidente criado !");
+            //  alert("Incidente criado !");
             history.push('/profile')
         } catch{
 

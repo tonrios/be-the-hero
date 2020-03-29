@@ -14,7 +14,9 @@ module.exports = {
                 'incidents.*',
                 'ongs.name',
                 'ongs.whatsapp',
-                'ongs.city', 'ongs.uf'
+                'ongs.city',
+                'ongs.uf',
+                'ongs.email'
             ]);
 
         respose.header('x-total-count', count['count(*)'])
